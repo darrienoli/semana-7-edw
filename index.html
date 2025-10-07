@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Computadora - Nivel Básico</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <div class="mark">PC</div>
+      <div>
+        <div class="titulo">Computadora - Nivel Básico</div>
+        <div class="subtitulo">Resumen corto y visual</div>
+      </div>
+    </div>
+    <nav>
+      <a href="#definicion">Definición</a>
+      <a href="#hardware">Hardware</a>
+      <a href="#software">Software</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero card">
+      <div class="text">
+        <h1>¿Qué es una computadora?</h1>
+        <p>Una <span class="accent">computadora</span> es un dispositivo que recibe datos, los procesa siguiendo instrucciones y entrega información. Está formada por <strong>hardware</strong> (parte física) y <strong>software</strong> (parte lógica).</p>
+      </div>
+      <div class="info">
+        <div>Nivel: <span class="accent">Básico</span></div>
+        <div>Diseño: tonos cyberpunk, legible y limpio</div>
+      </div>
+    </section>
+
+    <section id="definicion" class="card">
+      <h2>Definición</h2>
+      <p>Una computadora es un sistema electrónico que procesa datos mediante programas para realizar tareas específicas. Los componentes principales son la entrada, el procesamiento, el almacenamiento y la salida.</p>
+    </section>
+
+    <div class="grid">
+      <!-- HARDWARE -->
+      <section id="hardware" class="card">
+        <h2>Hardware</h2>
+        <p>El <strong>hardware</strong> son las partes físicas que puedes tocar. Se clasifican en varios tipos:</p>
+        <div class="types">
+          <div class="type-pill">
+            <h3>1. Unidad central (CPU)</h3>
+            <img src="cpu.jpeg" alt="CPU" class="img-small">
+            <p>Procesador que ejecuta instrucciones y coordina el funcionamiento del equipo.</p>
+          </div>
+
+          <div class="type-pill">
+            <h3>2. Memoria y almacenamiento</h3>
+            <img src="memoria.png" alt="Memoria RAM" class="img-small">
+            <ul>
+              <li><strong>RAM:</strong> memoria temporal para procesos en ejecución.</li>
+              <li><strong>Disco duro / SSD:</strong> almacenamiento permanente para archivos y programas.</li>
+            </ul>
+          </div>
+
+          <div class="type-pill">
+            <h3>3. Periféricos de entrada</h3>
+            <img src="teclado.png" alt="Teclado y ratón" class="img-small">
+            <ul>
+              <li>Teclado, ratón, micrófono, escáner.</li>
+            </ul>
+          </div>
+
+          <div class="type-pill">
+            <h3>4. Periféricos de salida</h3>
+            <img src="pantalla.png" alt="Pantalla" class="img-small">
+            <ul>
+              <li>Pantalla, impresora, altavoces.</li>
+            </ul>
+          </div>
+
+          <div class="type-pill">
+            <h3>5. Placa base y tarjeta gráfica</h3>
+            <img src="tarjeta.png" alt="Tarjeta madre" class="img-small">
+            <p>Conectan y permiten la comunicación entre todos los componentes.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SOFTWARE -->
+      <section id="software" class="card">
+        <h2>Software</h2>
+        <p>El <strong>software</strong> son los programas e instrucciones que indican a la computadora qué hacer. Sus tipos principales son:</p>
+        <div class="types">
+          <div class="type-pill">
+            <h3>1. Sistema operativo (SO)</h3>
+            <img src="sistema_operativo.jpg" alt="Sistema operativo" class="img-small">
+            <p>Programa que gestiona el hardware y permite ejecutar aplicaciones. Ejemplos: Windows, Linux, macOS, Android.</p>
+          </div>
+
+          <div class="type-pill">
+            <h3>2. Software de aplicación</h3>
+            <img src="aplicacion.png" alt="Software de aplicación" class="img-small">
+            <p>Programas para tareas concretas: navegadores, procesadores de texto, hojas de cálculo, editores de imágenes.</p>
+          </div>
+
+          <div class="type-pill">
+            <h3>3. Software de desarrollo</h3>
+            <img src="desarrollo.jpg" alt="Software de desarrollo" class="img-small">
+            <p>Herramientas para crear programas: compiladores, editores de código, entornos integrados (IDE).</p>
+          </div>
+
+          <div class="type-pill">
+            <h3>4. Software de sistema</h3>
+            <img src="sistema.jpg" alt="Software de sistema" class="img-small">
+            <p>Utilidades que ayudan al mantenimiento: controladores (drivers), antivirus, herramientas de diagnóstico.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="card">
+      <h2>Conceptos básicos rápidos</h2>
+      <ul>
+        <li><strong>Entrada:</strong> datos que recibe la computadora.</li>
+        <li><strong>Procesamiento:</strong> operaciones que realiza el CPU.</li>
+        <li><strong>Salida:</strong> información que entrega la computadora.</li>
+        <li><strong>Almacenamiento:</strong> donde se guardan datos a largo plazo.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    Página creada para Actividad de Entorno de Desarrollo Web Semana 7 • Diseño: Darrien Olivares Rojas
+  </footer>
+
+  <script>
+    document.querySelectorAll('nav a').forEach(a=>{
+      a.addEventListener('click', e=>{
+        e.preventDefault();
+        const id = a.getAttribute('href').substring(1);
+        document.getElementById(id).scrollIntoView({behavior:'smooth'});
+      });
+    });
+  </script>
+</body>
+</html>
